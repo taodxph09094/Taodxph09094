@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 import { SlideComponent } from './slide/slide.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   imports:      [ 
@@ -25,6 +26,6 @@ import { ProductListComponent } from './product-list/product-list.component';
   bootstrap:    [
      AppComponent 
      ],
-  providers:[]
+  providers:[ProductService]
 })
 export class AppModule { }
